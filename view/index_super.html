@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6 ielt7 ielt8 ielt9"><![endif]--><!--[if IE 7 ]>
+<html lang="en" class="ie7 ielt8 ielt9"><![endif]--><!--[if IE 8 ]>
+<html lang="en" class="ie8 ielt9"><![endif]--><!--[if IE 9 ]>
+<html lang="en" class="ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assert/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assert/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../assert/css/site.css" rel="stylesheet">
+    <link href="../assert/js/datepicker/datepicker.css" rel="stylesheet">
+
+    <script src="../assert/js/datepicker/bootstrap-datepicker.js"></script>
+    <script src="../assert/js/jquery/jquery-1.11.0.min.js"></script>
+    <script src="../assert/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assert/js/bootstrap/site.js"></script>
+    <script type="text/javascript" src="../assert/js/sea.js"></script>
+
+    <style type="text/css">
+        .control-label{
+            width: 80px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .control-group input{
+            margin-top: 8px;
+        }
+
+        .star {
+            color: red;
+            font-size: 15px;
+        }
+
+        .date-up {
+            position: relative;
+            top:-8px;
+        }
+
+        .date-resize {
+            position: relative;
+            top:-5px;
+        }
+
+        .checkbox-resize {
+            position: relative;
+            top:4px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a
+                    class="brand" href="javascript:">:)</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="javascript:">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">数据查看</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav pull-right">
+                        <li>
+                            <a href="javascript:">@username</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <div class="well" style="padding: 8px 0;">
+                <ul class="nav nav-list">
+                    <li class="nav-header">
+                        操作
+                    </li>
+                    <li class="active">
+                        <a href="javascript:"><i class="icon-white icon-home"></i> 用户管理</a>
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="icon-list-alt"></i> 数据查看</a>
+                    </li>
+
+                    <li class="nav-header">
+                        账户
+                    </li>
+                    <li>
+                        <a href="javascript:"><i class="icon-cog"></i> 修改密码</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="span9">
+            <h4>
+                用户列表
+            </h4>
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>
+                        序号
+                    </th>
+                    <th>
+                        公司名称
+                    </th>
+                    <th>
+                        简称
+                    </th>
+                    <th>
+                        联系人
+                    </th>
+                    <th>
+                        运营品牌
+                    </th>
+                    <th>
+                        授权期
+                    </th>
+                    <th>
+                        操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        xxx
+                    </td>
+                    <td>
+                        x
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xxxx-xx
+                    </td>
+                    <td>
+                        <a href="#" class="view-link">查看</a>
+                        &nbsp;&nbsp;<a href="#" class="view-link">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        xxx
+                    </td>
+                    <td>
+                        x
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xxxx-xx
+                    </td>
+                    <td>
+                        <a href="#" class="view-link">查看</a>
+                        &nbsp;&nbsp;<a href="#" class="view-link">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        xxx
+                    </td>
+                    <td>
+                        x
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xxxx-xx
+                    </td>
+                    <td>
+                        <a href="#" class="view-link">查看</a>
+                        &nbsp;&nbsp;<a href="#" class="view-link">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        xxx
+                    </td>
+                    <td>
+                        x
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xx
+                    </td>
+                    <td>
+                        xxxx-xx
+                    </td>
+                    <td>
+                        <a href="#" class="view-link">查看</a>
+                        &nbsp;&nbsp;<a href="#" class="view-link">删除</a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+            <div class="pagination">
+                <ul>
+                    <li class="active">
+                        <a href="javascript:">1</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">2</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">3</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">4</a>
+                    </li>
+                    <li class="disabled">
+                        <a href="javascript:">上一页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">下一页</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="toggle-link" href="javascript:"><i class="icon-plus"></i>添加用户</a>
+
+            <div>
+                <div class="control-group">
+                    <label class="control-label" for="work_name" ><span class="star">*</span>公司名称：</label>
+                    <input type="text" class="input-xlarge" id="work_name" />
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="work_dep"><span class="star">*</span>公司简称：</label>
+                    <input type="text" class="input-xlarge" id="work_dep" />
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="work_pos"><span class="star">*</span>所在地区：</label>
+                    <input type="text" class="input-xlarge" id="work_pos" />
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="work_mail"><span class="star">*</span>公司地址：</label>
+                    <input type="text" class="input-xlarge" id="work_mail" />
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="work_title"><span class="star">*</span>运营品牌：</label>
+                    <input type="text" class="input-xlarge" id="work_title" />
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for=""><span class="star">*</span>联系人：</label>
+                    <input type="text" class="input-xlarge"  />
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for=""><span class="star">*</span>电话：</label>
+                    <input type="text" class="input-xlarge"  />
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">座机：</label>
+                    <input type="text" class="input-xlarge"  />
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">传真：</label>
+                    <input type="text" class="input-xlarge"  />
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for=""><span class="star">*</span>授权期：</label>
+                    <span>开始时间</span>
+                    <div class="input-append date date-resize" id="dp_1_start" data-date="2014-10-14" data-date-format="yyyy-mm-dd" style="display: inline;">
+                        <input class="span2 date-up" size="16" type="text" value="2014-10-14" readonly>
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>&nbsp;&nbsp;
+                    <span>结束时间</span>
+                    <div class="input-append date date-resize" id="dp_1_end" data-date="2014-10-14" data-date-format="yyyy-mm-dd" style="display: inline;">
+                        <input class="span2 date-up" size="16" type="text" value="2014-10-14" readonly>
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for=""><span class="star">*</span>授权项目：</label>
+                    <div style="margin-left: 90px;position: relative;top:-30px;">
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList1" value="option1" checked="checked" />
+                            <span class="checkbox-resize">车型管理</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList2" value="option2" />
+                            <span class="checkbox-resize">用户管理</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3" />
+                            <span class="checkbox-resize">报表查看</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3" />
+                            <span class="checkbox-resize">通知任务</span>
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3" />
+                            <span class="checkbox-resize">统计排名</span>
+                        </label>
+                    </div>
+
+                </div>
+
+
+
+                <div id="upload_loading" style="width: 400px;margin-left: 53px;">
+                    <img src="../assert/img/loading.gif" style="width: 20px;">&nbsp;&nbsp;
+                    <div id="loading_msg" style="color: #ff4500;font-size: 14px;display: inline">TIPS</div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="btn_commit">确定</button>
+                    <button class="btn" id="btn_reset">取消</button>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="control-group">
+                    <label class="control-label" for="" >公司名称：</label>
+                    <span>xxxx</span>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">公司简称：</label>
+                    <span>xxxx</span>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="work_pos">所在地区：</label>
+                    <span>xxxx</span>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="work_mail">公司地址：</label>
+                    <span>xxxx</span>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="work_title">运营品牌：</label>
+                    <span>xxxx</span>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">联系人：</label>
+                    <span>xxxx</span>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">电话：</label>
+                    <span>xxxx</span>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">座机：</label>
+                    <span>xxxx</span>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">传真：</label>
+                    <span>xxxx</span>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="">授权期：</label>
+                    <span>开始时间</span>
+                    <span>xxxx</span>
+                    &nbsp;&nbsp;
+                    <span>结束时间</span>
+                    <span>xxxx</span>
+
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="">授权项目：</label>
+                    <div style="margin-left: 90px;position: relative;top:-30px;">
+                        <label class="checkbox">
+                            <span class="checkbox-resize">车型管理</span>
+                        </label>
+                        <label class="checkbox">
+                            <span class="checkbox-resize">用户管理</span>
+                        </label>
+                        <label class="checkbox">
+                            <span class="checkbox-resize">报表查看</span>
+                        </label>
+                        <label class="checkbox">
+                            <span class="checkbox-resize">通知任务</span>
+                        </label>
+                        <label class="checkbox">
+                            <span class="checkbox-resize">统计排名</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="">返回</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    seajs.config({
+        alias: {},
+        debug: 0
+        // 0: 只输出少量信息 1：输出大量信息 2：对已加载的文件不进行缓存
+    });
+    seajs.use('login/login', function (i) {
+        i.init();
+    });
+</script>
+</body>
+</html>

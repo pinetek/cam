@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6 ielt7 ielt8 ielt9"><![endif]--><!--[if IE 7 ]>
+<html lang="en" class="ie7 ielt8 ielt9"><![endif]--><!--[if IE 8 ]>
+<html lang="en" class="ie8 ielt9"><![endif]--><!--[if IE 9 ]>
+<html lang="en" class="ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assert/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assert/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../assert/css/site.css" rel="stylesheet">
+
+    <script src="../assert/js/jquery/jquery-1.11.0.min.js"></script>
+    <script src="../assert/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assert/js/bootstrap/site.js"></script>
+    <script type="text/javascript" src="../assert/js/sea.js"></script>
+</head>
+<body>
+<div id="login-page" style="margin: 200px auto;width: 420px;">
+    <h5>CA 管理系统 - 登录</h5>
+    <input id="account" type="text" class="span2" placeholder="账号"/>
+    <input id="password" type="password" class="span2" placeholder="密码"/><br/>
+    <button id="login_commit" type="submit" class="btn btn-primary">登录</button>
+</div>
+<script type="text/javascript">
+    seajs.config({
+        alias: {},
+        debug: 0
+        // 0: 只输出少量信息 1：输出大量信息 2：对已加载的文件不进行缓存
+    });
+    seajs.use('login/login', function (i) {
+        i.init();
+    });
+</script>
+</body>
+</html>
