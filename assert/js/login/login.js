@@ -5,5 +5,5 @@ define(function (require, exports) {
     function init() {
     }
 
-    exports.init = init();
+    exports.init = init;
 });
